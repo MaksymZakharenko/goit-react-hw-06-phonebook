@@ -6,7 +6,7 @@ const initialState = {
   filter: "",
 };
 
-const mainReducer = createReducer(initialState, {
+const contactsReducer = createReducer(initialState, {
   [addNewToList]: (state, action) => ({
     ...state,
     items: [action.payload, ...state.items],
@@ -21,7 +21,7 @@ const mainReducer = createReducer(initialState, {
   }),
 });
 
-export default mainReducer;
+export default contactsReducer;
 
 // import {
 //   ADD_NEW_CONTACT,
